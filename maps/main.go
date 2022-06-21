@@ -32,6 +32,9 @@ func main() {
 
 	fmt.Println(animals)
 
+	for k, v := range animals {
+		fmt.Println("Animal Number is:", k, "Animal's name is:", v)
+	}
 	animals[9] = "Monkey"
 
 	fmt.Println(animals)

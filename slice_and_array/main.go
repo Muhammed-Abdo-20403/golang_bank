@@ -56,6 +56,10 @@ func main() {
 	fmt.Println("New Slice 4:", num4)
 	fmt.Println("New Slice 5:", num5)
 
+	for key, value := range num {
+		fmt.Println("This is Key:", key, "and this is the value:", value)
+	}
+
 	//// ********************************** ////
 	//// *********** Using Arrays ********* ////
 	//// ********************************** ////
@@ -68,12 +72,17 @@ func main() {
 	// or
 	// var array_name[length]Typle{item1, item2, item3, ...itemN}
 
-	var name [3]string
+	var name [5]string
 
-	name[0] = "Mo"
+	name[0] = "Muhammed"
 	name[1] = "Abdo"
-	name[2] = "Elshiek"
+	name[2] = "Mostafa"
+	name[3] = "Sobhy"
+	name[4] = "Ahmed"
 
+	for k, v := range name {
+		fmt.Println("This is Key:", k, "and this is the value:", v)
+	}
 	fmt.Println("Elements of Array:")
 	fmt.Println("Element 1: ", name[0])
 	fmt.Println("Element 2: ", name[1])
