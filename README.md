@@ -1,2 +1,2 @@
 # Golang Bank 
-** Example on Golang Basics **
+** Simple Examples On Golang Basics **
