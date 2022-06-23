@@ -63,4 +63,40 @@ func main() {
 
 	fmt.Println("**************************************")
 
+	//// *************************************** ////
+	//// ******** Using Variable Scope ********* ////
+	//// *************************************** ////
+
+	// Local Variables(Declared Inside a block or a function)
+	// Global Variables(Declared outside a block or a function)
+
+	num := 5
+	fmt.Println("Num Before", num)
+	{
+		// available accessible
+		num = 5
+		fmt.Println("Num In:", num)
+	}
+	fmt.Println("Num Out After:", num)
+
+	num1 := 20
+	fmt.Println("New Num out", num1)
+	{
+		// Declared a new variable with same nam
+		num1 := 5
+		fmt.Println("New Num In:", num1)
+
+		// Update in Variable
+		num1 = 15
+		fmt.Println("Update Num In:", num1)
+	}
+
+	// update out variable
+	num1 = 30
+	fmt.Println("Update Num Out:", num1)
+
+	// will cause error "undfefined: mo"
+	// fmt.Print("Mo Salah", mo)
+	// mo := "Mo Salah"
+
 }
